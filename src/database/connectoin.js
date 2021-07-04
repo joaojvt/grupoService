@@ -1,11 +1,11 @@
 const knex = require('knex')({
   client: 'mysql',
   connection: {
-    host : '127.0.0.1',
-    user : 'grupoServoces',
-    password : 'your_database_password',
-    database : 'myapp_test'
+    host : process.env.HOST_DB,
+    user : process.env.USER_DB,
+    password : process.env.PASSWORD_DB,
+    database : process.env.DATABASE
   }
 });
 
-export default knex;
+module.exports =  knex;
