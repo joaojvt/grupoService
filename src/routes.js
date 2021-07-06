@@ -1,15 +1,12 @@
 const express = require('express');
 const routes = express.Router()
-const path = require('path');
 
-const TesteController = require('./controller/TesteController')
+const GraficosController = require('./controller/GraficosController')
 
-const teste =  new TesteController()
+const grafico =  new GraficosController()
 
-routes.get('/', (req, res) =>  {
-  res.sendFile(path.join(__dirname + '/public/index.html'))
-});
-
-routes.get('/base', teste.index)
+routes.get('/alo-por-estado', grafico.aloPorEstado)
+routes.get('/cpca-diario', grafico.CPCADiario)
+routes.get('/media-produto-valor', grafico.mediaProdutoValor)
 
 module.exports = routes

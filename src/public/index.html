@@ -4,11 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grupo service</title>
-  <link rel="stylesheet" href="./css/app.css">
+  <title>Teste Grupo Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    
+  <header><h1>Teste Grupo Service</h1></header>
+  <div class="container">
+    <h2>Quantidade ALO por estado</h2>
+    <div id="grafico-pizza"></div>
+
+    <h2>Quantidade CPCA diário</h2>
+    <div id="grafico-linha"></div>
+
+    <h2>Média Produto x Valor</h2>
+    <div id="grafico-coluna"></div>
+  </div>
+
+  <footer>
+    <p>
+      Desenvolvido por <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-da-silva-61459b113/">João Vitor</a>
+    </p>
+  </footer>
 </body>
-<script src="./js/app.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<script type="module" src="js/app.js"></script>
 </html>

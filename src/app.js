@@ -3,6 +3,7 @@ const routes = require('./routes');
 
 const app = express();
 
-app.use(routes);
+app.use('/', express.static('src/public'));
+app.use('/api', routes);
 
-module.exports =  app
+module.exports = app
