@@ -28,19 +28,11 @@ h2 {
   align-items: center;
 }
 
-#grafico-pizza {
-  height: 400px;
-  width: 800px;
-}
 
-#grafico-linha {
+.grafico {
   height: 400px;
   width: 800px;
-}
-
-#grafico-coluna {
-  height: 400px;
-  width: 800px;
+  margin-bottom: 30px;
 }
 
 footer {
